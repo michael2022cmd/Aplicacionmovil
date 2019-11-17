@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacionmovil.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Formulario Registro" Font="25" TextColor="Green" HorizontalOptions="Center"></Label>
+                <Entry Placeholder="Nombre"></Entry>
+                <Entry Placeholder="Apellido"></Entry>
+                <Entry Placeholder="Correo"></Entry>
+                <Entry Placeholder="Pais"></Entry>
+                <Entry Placeholder="Ciudad"></Entry>
+                <DatePicker ></DatePicker>
+                <Button Text="Guardar" BackgroundColor="Green"></Button>
+                <Button Text="Nuevo" BackgroundColor="blue"></Button>
+                <Button Text="ver" BackgroundColor="blue"></Button>
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

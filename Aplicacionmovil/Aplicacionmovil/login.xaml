@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aplicacionmovil.login">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="imagen.jpg" Aspect="AspectFill"/>
+            <BoxView Color="Red" Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="logo.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry Placeholder="Correo Eletronico" PlaceholderColor="White"/>
+                    <Entry Placeholder="Contrasena" PlaceholderColor="White" IsPassword="True"/>
+                    <Button Text="Iniciar Sesion" BackgroundColor="White" BorderRadius="20" TextColor="Red" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Recuperar contrasena?"/>
+                        <Label Text="Registrarse" HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="2"/>
+                    <Label Text="Iniciar Sesion con" HorizontalOptions="Center"/>
+                </StackLayout>
+
+
+
+
+            </Grid>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
