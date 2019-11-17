@@ -2,13 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Aplicacionmovil"
-             x:Class="Aplicacionmovil.MainPage">
+             x:Class="Aplicacionmovil.MainPage" Title="{Binding User }">
+    
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid AutomationProperties.IsInAccessibleTree="True">
+        <Image Source="log1.jpp" Aspect="AspectFill" HorizontalOptions="Center"/>
 
+
+        <ScrollView>
+
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ScrollView VerticalOptions="Center" HorizontalOptions="Fill"></ScrollView>
+            <Image Grid.Row="0" Source=""  WidthRequest="150"
+                       HeightRequest="50" Margin="20,10"/>
+            <StackLayout Grid.Row="3" 
+                             Padding="20,5">
+                <Entry  Text="{Binding User}"  Placeholder="Correo Eletronico" PlaceholderColor="Black" FontSize="Large" BackgroundColor="White" HorizontalTextAlignment="Center"/>
+                <Entry Placeholder="Contrasena" PlaceholderColor="Black" FontSize="Large" BackgroundColor="White" IsPassword="True" HorizontalTextAlignment="Center" />
+
+                <Button Text="Registro" 
+                        x:Name="btniniciar" Clicked="Btniniciar_Clicked"
+                        BorderWidth="20" FontSize="Large" TextColor="Black" />
+                
+                
+                
+                <Button Text="{Binding MiText}" 
+                        BorderWidth="20" FontSize="Large" TextColor="Black"
+                        
+
+                    VerticalOptions="Center"></Button>
+                <StackLayout Orientation="Horizontal">
+
+                </StackLayout>
+                <StackLayout Grid.Row="8"/>
+
+            </StackLayout>
+
+
+
+
+        </Grid>
+
+    </ScrollView>
+
+    </Grid>
+  
 </ContentPage>

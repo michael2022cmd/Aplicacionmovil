@@ -16,9 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="login.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Compile Update="Registro.xaml.cs">
+      <DependentUpon>Registro.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Registro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

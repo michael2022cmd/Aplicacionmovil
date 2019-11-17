@@ -13,9 +13,21 @@ namespace Aplicacionmovil
     [DesignTimeVisible(true)]
     public partial class MainPage : ContentPage
     {
+
+//public string MiText { get; set; } = Constantes.logintitulo;
+
         public MainPage()
+
         {
             InitializeComponent();
+            BindingContext = new maimodel();
+        }
+
+      
+
+        private async void Btniniciar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Registro())   ;
         }
     }
 }
